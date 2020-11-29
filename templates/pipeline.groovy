@@ -1,7 +1,7 @@
-pipelineJob($PIPELINE_NAME) {
+pipelineJob("$PIPELINE_NAME") {
     definition {
         cps {
-            script(readFileFromWorkspace('templates/pipeline_workflow.groovy'))
+            script(readFileFromWorkspace('pipeline_workflow.groovy'))
         }
     }
 }

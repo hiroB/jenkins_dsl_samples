@@ -1,5 +1,5 @@
 folderName = "$NAME"
-folderDescription = '$DESCRIPTION'
+folderDescription = "$DESCRIPTION"
 
 folder(folderName) {
     description(folderDescription)
