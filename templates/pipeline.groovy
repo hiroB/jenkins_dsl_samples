@@ -1,7 +1,8 @@
 pipelineJob("$PIPELINE_NAME") {
     definition {
         cps {
-            script(readFileFromWorkspace('pipeline_workflow.groovy'))
+            script(readFileFromWorkspace('templates/pipeline_workflow.groovy'))
+            sandbox()
         }
     }
 }
